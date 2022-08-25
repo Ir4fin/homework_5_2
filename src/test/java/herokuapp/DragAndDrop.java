@@ -11,13 +11,13 @@ import org.junit.jupiter.api.Test;
 public class DragAndDrop {
 
     @BeforeAll
-        static void configure() {
+    static void configure() {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://the-internet.herokuapp.com/";
     }
 
     @Test
-        void dragRectangleAToRectangleB(){
+    void dragRectangleAToRectangleB() {
         //open page drag and drop
         open("/drag_and_drop");
         //drag rectangle A to rectangle B and vice versa
@@ -27,13 +27,6 @@ public class DragAndDrop {
         $("#column-b").shouldHave(text("A"));
 
     }
-
-
-
-
-
-
-
 
 
 }

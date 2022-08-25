@@ -3,6 +3,7 @@ package github;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Condition.text;
+
 import com.codeborne.selenide.Configuration;
 
 import org.junit.jupiter.api.BeforeAll;
@@ -19,7 +20,7 @@ public class comparePlans {
 
 
     @Test
-    void pageShouldLoads (){
+    void pageShouldLoads() {
         //open github.com
         open("https://github.com");
         //bring mouse over "pricing"
@@ -28,20 +29,7 @@ public class comparePlans {
         $(byText("Compare plans")).click();
         //check if opened page is right
         $("h1.h1").shouldHave(text("Compare features"));
-   }
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 }
