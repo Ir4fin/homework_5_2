@@ -18,7 +18,8 @@ public class comparePlans {
     }
 
 
-    @Test void pageShouldLoads (){
+    @Test
+    void pageShouldLoads (){
         //open github.com
         open("https://github.com");
         //bring mouse over "pricing"
