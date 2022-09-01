@@ -8,10 +8,9 @@ import com.codeborne.selenide.Configuration;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 
 
-public class comparePlans {
+public class ComparePlans {
 
     @BeforeAll
     static void configure() {
